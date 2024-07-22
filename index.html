@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Colorida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            transition: background-color 0.05s ease;
+            text-align: center;
+        }
+        .text {
+            margin-bottom: 20px;
+        }
+        .tenor-gif-embed {
+            max-width: 300px;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+
+        setInterval(changeBackgroundColor, 100);
+    </script>
+</head>
+<body>
+    <div class="text">Itanhanhem so muleki doido</div>
+    <div class="tenor-gif-embed" data-postid="18848836" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+        <a href="https://tenor.com/view/duck-gif-18848836">Duck Sticker</a>from 
+        <a href="https://tenor.com/search/duck-stickers">Duck Stickers</a>
+    </div>
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+</body>
+</html>
